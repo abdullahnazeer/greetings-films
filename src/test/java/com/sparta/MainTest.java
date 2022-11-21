@@ -1,6 +1,5 @@
 package com.sparta;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -69,7 +68,7 @@ class MainTest {
 
     @ParameterizedTest
     @ValueSource(ints = {12, 15, 17})
-    @DisplayName("Given a time between 12 and 18 hours, greeting returns Good Afternoon!")
+    @DisplayName("Given a time between 12 and 17 hours, greeting returns Good Afternoon!")
     public void GivenTimeBetween12And18_GreetingReturnsGoodAfternoon(int time) {
         String expectedGreeting = "Good Afternoon!";
         String result = Main.greeting(time);
